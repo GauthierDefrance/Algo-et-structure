@@ -4,6 +4,7 @@
 #include <stdio.h>
 #include "Sorting.h"
 #include "../Tools/Tools.h"
+#include "../Tools/FileReading.h"
 
 int main(){
     int N = 16;
@@ -12,6 +13,9 @@ int main(){
     selectSort(tab,N);
     printTab(tab, N);
     destroyTab(&tab);
+    printf("\n");
+    printLines();
+    tabFichier();
 }
 
 

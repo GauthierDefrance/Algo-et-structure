@@ -8,4 +8,6 @@ add_executable(MonProjet
         TP1/Sorting.c
         Tools/Tools.c
         Tools/Tools.h
+        Tools/FileReading.c
+        Tools/FileReading.h
 )

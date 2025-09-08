@@ -25,4 +25,15 @@ void permutation(Telement tab[], int n, int a, int b);
  */
 Telement findMinIndex(Telement tab[], int n, int i);
 
+
+/**
+ * Fonction qui effectue un trie par sélection d'un tableau de Telement.
+ * Complexité de la fonction : n
+ *
+ * @param tab
+ * @param n
+ */
+void selectSort(Telement tab[], int n);
+
+
 #endif // SORTING_H

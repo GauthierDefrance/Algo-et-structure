@@ -6,4 +6,6 @@ set(CMAKE_C_STANDARD 11)
 add_executable(MonProjet
         TP1/main.c
         TP1/Sorting.c
+        Tools/Tools.c
+        Tools/Tools.h
 )

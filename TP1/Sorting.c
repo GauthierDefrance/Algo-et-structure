@@ -22,13 +22,24 @@ void permutation(Telement tab[], int n, int a, int b){
 **/
 Telement findMinIndex(Telement tab[], int n, int i){
   Telement champion=tab[i];
+  int champion_index=i;
     for(int j=i; j<n; j++){
-      if(champion>tab[j]) champion=tab[j];
+      if(champion>tab[j]) {
+        champion=tab[j];
+        champion_index=j;
+      }
     }
-  return champion;
+  return champion_index;
 }
 
 
+void selectSort(Telement tab[], int n) {
+  int i;
+  for (int k = 0; k < n-1; k++) {
+    i = findMinIndex(tab, n, k);
+    permutation(tab, n, k, i);
+  }
+}
 
 
 

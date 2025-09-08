@@ -6,9 +6,12 @@
 #include "../Tools/Tools.h"
 
 int main(){
-    Telement tab[]={45,15,3,4,5,6,7,8,9, 1501, -43, 0};
-    selectSort(tab,12);
-    printTab(tab, 12);
+    int N = 16;
+    Telement *tab = initTab(N);
+    nullTab(tab,N);
+    selectSort(tab,N);
+    printTab(tab, N);
+    printf("test");
 }
 
 

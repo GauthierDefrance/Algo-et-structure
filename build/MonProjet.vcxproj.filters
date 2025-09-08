@@ -7,11 +7,22 @@
     <ClCompile Include="D:\github\Algo-et-structure\TP1\Sorting.c">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="D:\github\Algo-et-structure\Tools\Tools.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="D:\github\Algo-et-structure\Tools\Tools.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <CustomBuild Include="D:\github\Algo-et-structure\CMakeLists.txt" />
   </ItemGroup>
   <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{FBBAC985-DFE3-33E6-BEA4-FC511BD0D220}</UniqueIdentifier>
+    </Filter>
     <Filter Include="Source Files">
       <UniqueIdentifier>{725A746E-D459-30CF-9E8E-AE99F7F2EAFD}</UniqueIdentifier>
     </Filter>

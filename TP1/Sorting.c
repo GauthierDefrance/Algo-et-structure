@@ -20,7 +20,7 @@ void permutation(Telement tab[], int n, int a, int b){
 /**
 *  Fonction qui trouve l'élément minimum d'un tableau Telement, compris entre i et n.
 **/
-Telement findMin(Telement tab[], int n, int i){
+Telement findMinIndex(Telement tab[], int n, int i){
   Telement champion=tab[i];
     for(int j=i; j<n; j++){
       if(champion>tab[j]) champion=tab[j];

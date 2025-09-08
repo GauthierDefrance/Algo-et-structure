@@ -3,8 +3,13 @@
 //
 #include <stdio.h>
 #include "Sorting.h"
+#include "../Tools/Tools.h"
 
 int main(){
-    Telement tab[]={1,2,3,4,5,6,7,8,9};
-    printf("%d",findMin(tab,10,4));
+    Telement tab[]={45,15,3,4,5,6,7,8,9, 1501, -43, 0};
+    selectSort(tab,12);
+    printTab(tab, 12);
 }
+
+
+

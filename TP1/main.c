@@ -11,7 +11,7 @@ int main(){
     nullTab(tab,N);
     selectSort(tab,N);
     printTab(tab, N);
-    printf("test");
+    destroyTab(&tab);
 }
 
 

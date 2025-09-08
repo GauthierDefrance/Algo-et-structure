@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include "Tools.h"
-
+#include "time.h"
 #include <stdlib.h>
 
 typedef int Telement;
@@ -50,7 +50,15 @@ void nullTab(Telement tab[], int n) {
  * Fonction pour détruire un tableau
  * @param tab
  */
-void destroyTab(Telement *tab) {
-    free(tab);
+void destroyTab(Telement **tab) {
+    free(*tab);
     *tab = NULL;
+}
+
+
+void randomiseTab(Telement tab[], int n, int Min, int Max) {
+    srand(time(NULL));
+    for(int i=0; i<n; i++) {
+        tab[i] = Min + rand()%(Max-Min +1);
+    }
 }

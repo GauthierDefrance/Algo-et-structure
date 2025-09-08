@@ -9,7 +9,9 @@ Telement* initTab(int n);
 
 void nullTab(Telement tab[], int n);
 
-void destroyTab(Telement *tab);
+void destroyTab(Telement **tab);
+
+void randomiseTab(Telement tab[], int n, int Min, int Max);
 
 
 

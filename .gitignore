@@ -1,2 +1,4 @@
 # Dossier de build
 /build/
+/cmake-build-debug/
+/.idea/

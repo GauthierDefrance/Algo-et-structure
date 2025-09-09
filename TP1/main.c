@@ -3,14 +3,10 @@
 //
 #include <stdio.h>
 #include "Sorting.h"
+#include "../Tools/FileReading.h"
 #include "../Tools/Tools.h"
 
 int main(){
-<<<<<<< Updated upstream
-    Telement tab[]={45,15,3,4,5,6,7,8,9, 1501, -43, 0};
-    selectSort(tab,12);
-    printTab(tab, 12);
-=======
     int N = 12;
     int MIN = 100;
     int MAX = 200;
@@ -19,13 +15,14 @@ int main(){
     randomiseTab(tab, N, MIN, MAX);
     selectSort(tab,N);
     printTab(tab, N);
-    destroyTab(&tab);
-    printf("\n");
-    printLines("../Tools/test.txt");
-    tabFichier("../Tools/test.txt");
-    printf("\n");
-    printf("nb lignes = %d",countLinesFile("../Tools/test.txt"));
->>>>>>> Stashed changes
+
+    int n=0;
+    Telement * newTab = tabFichier("../Tools/test.txt", &n);
+    printf("test %d \n", n);
+    printTab(newTab, n);
+    selectSort(newTab, n);
+    printTab(newTab, n);
+
 }
 
 

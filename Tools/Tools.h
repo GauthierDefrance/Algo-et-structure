@@ -5,6 +5,18 @@ typedef int Telement;
 
 void printTab(Telement tab[], int n);
 
+<<<<<<< Updated upstream
 
+=======
+Telement* initTab(int n);
+
+void nullTab(Telement tab[], int n);
+
+void destroyTab(Telement **tab);
+
+void randomiseTab(Telement tab[], int n, int Min, int Max);
+
+int countLinesFile(char *FilePath);
+>>>>>>> Stashed changes
 
 #endif //TOOLS_H

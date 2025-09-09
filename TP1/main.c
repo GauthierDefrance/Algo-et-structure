@@ -18,7 +18,7 @@ int main(){
 
     int n=0;
     Telement * newTab = tabFichier("../Tools/test.txt", &n);
-    printf("test %d \n", n);
+
     printTab(newTab, n);
     selectSort(newTab, n);
     printTab(newTab, n);

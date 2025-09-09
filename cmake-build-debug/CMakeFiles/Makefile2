@@ -62,7 +62,7 @@ CMAKE_BINARY_DIR = D:\Github\Algo-et-structure\cmake-build-debug
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/MonProjet.dir/all
+all: CMakeFiles/TP1.dir/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
@@ -70,34 +70,34 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/MonProjet.dir/clean
+clean: CMakeFiles/TP1.dir/clean
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/MonProjet.dir
+# Target rules for target CMakeFiles/TP1.dir
 
 # All Build rule for target.
-CMakeFiles/MonProjet.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\MonProjet.dir\build.make CMakeFiles/MonProjet.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\MonProjet.dir\build.make CMakeFiles/MonProjet.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=D:\Github\Algo-et-structure\cmake-build-debug\CMakeFiles --progress-num=1,2,3,4,5 "Built target MonProjet"
-.PHONY : CMakeFiles/MonProjet.dir/all
+CMakeFiles/TP1.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\TP1.dir\build.make CMakeFiles/TP1.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\TP1.dir\build.make CMakeFiles/TP1.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=D:\Github\Algo-et-structure\cmake-build-debug\CMakeFiles --progress-num=1,2,3,4,5 "Built target TP1"
+.PHONY : CMakeFiles/TP1.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/MonProjet.dir/rule: cmake_check_build_system
+CMakeFiles/TP1.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start D:\Github\Algo-et-structure\cmake-build-debug\CMakeFiles 5
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/MonProjet.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/TP1.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start D:\Github\Algo-et-structure\cmake-build-debug\CMakeFiles 0
-.PHONY : CMakeFiles/MonProjet.dir/rule
+.PHONY : CMakeFiles/TP1.dir/rule
 
 # Convenience name for target.
-MonProjet: CMakeFiles/MonProjet.dir/rule
-.PHONY : MonProjet
+TP1: CMakeFiles/TP1.dir/rule
+.PHONY : TP1
 
 # clean rule for target.
-CMakeFiles/MonProjet.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\MonProjet.dir\build.make CMakeFiles/MonProjet.dir/clean
-.PHONY : CMakeFiles/MonProjet.dir/clean
+CMakeFiles/TP1.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\TP1.dir\build.make CMakeFiles/TP1.dir/clean
+.PHONY : CMakeFiles/TP1.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

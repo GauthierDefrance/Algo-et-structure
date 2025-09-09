@@ -3,7 +3,7 @@
 #define SORTING_H
 
 // Définition du type Telement (modifiable si besoin)
-typedef int Telement;
+#include "../Tools/Types.h"
 
 /**
  * Permute deux éléments dans un tableau de Telement aux indices a et b.

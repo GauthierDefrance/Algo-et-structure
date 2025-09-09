@@ -2,10 +2,10 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "MonProjet.exe"
+			"path" : "TP1.exe"
 		},
 		{
-			"path" : "MonProjet.pdb"
+			"path" : "TP1.pdb"
 		}
 	],
 	"backtrace" : 1,
@@ -59,7 +59,7 @@
 			]
 		}
 	],
-	"id" : "MonProjet::@6890427a1f51a3e7e1df",
+	"id" : "TP1::@6890427a1f51a3e7e1df",
 	"link" : 
 	{
 		"commandFragments" : 
@@ -79,8 +79,8 @@
 		],
 		"language" : "C"
 	},
-	"name" : "MonProjet",
-	"nameOnDisk" : "MonProjet.exe",
+	"name" : "TP1",
+	"nameOnDisk" : "TP1.exe",
 	"paths" : 
 	{
 		"build" : ".",

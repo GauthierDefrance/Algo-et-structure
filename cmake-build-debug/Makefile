@@ -116,24 +116,24 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named MonProjet
+# Target rules for targets named TP1
 
 # Build rule for target.
-MonProjet: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 MonProjet
-.PHONY : MonProjet
+TP1: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 TP1
+.PHONY : TP1
 
 # fast build rule for target.
-MonProjet/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\MonProjet.dir\build.make CMakeFiles/MonProjet.dir/build
-.PHONY : MonProjet/fast
+TP1/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\TP1.dir\build.make CMakeFiles/TP1.dir/build
+.PHONY : TP1/fast
 
 TP1/Sorting.obj: TP1/Sorting.c.obj
 .PHONY : TP1/Sorting.obj
 
 # target to build an object file
 TP1/Sorting.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\MonProjet.dir\build.make CMakeFiles/MonProjet.dir/TP1/Sorting.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\TP1.dir\build.make CMakeFiles/TP1.dir/TP1/Sorting.c.obj
 .PHONY : TP1/Sorting.c.obj
 
 TP1/Sorting.i: TP1/Sorting.c.i
@@ -141,7 +141,7 @@ TP1/Sorting.i: TP1/Sorting.c.i
 
 # target to preprocess a source file
 TP1/Sorting.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\MonProjet.dir\build.make CMakeFiles/MonProjet.dir/TP1/Sorting.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\TP1.dir\build.make CMakeFiles/TP1.dir/TP1/Sorting.c.i
 .PHONY : TP1/Sorting.c.i
 
 TP1/Sorting.s: TP1/Sorting.c.s
@@ -149,7 +149,7 @@ TP1/Sorting.s: TP1/Sorting.c.s
 
 # target to generate assembly for a file
 TP1/Sorting.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\MonProjet.dir\build.make CMakeFiles/MonProjet.dir/TP1/Sorting.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\TP1.dir\build.make CMakeFiles/TP1.dir/TP1/Sorting.c.s
 .PHONY : TP1/Sorting.c.s
 
 TP1/main.obj: TP1/main.c.obj
@@ -157,7 +157,7 @@ TP1/main.obj: TP1/main.c.obj
 
 # target to build an object file
 TP1/main.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\MonProjet.dir\build.make CMakeFiles/MonProjet.dir/TP1/main.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\TP1.dir\build.make CMakeFiles/TP1.dir/TP1/main.c.obj
 .PHONY : TP1/main.c.obj
 
 TP1/main.i: TP1/main.c.i
@@ -165,7 +165,7 @@ TP1/main.i: TP1/main.c.i
 
 # target to preprocess a source file
 TP1/main.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\MonProjet.dir\build.make CMakeFiles/MonProjet.dir/TP1/main.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\TP1.dir\build.make CMakeFiles/TP1.dir/TP1/main.c.i
 .PHONY : TP1/main.c.i
 
 TP1/main.s: TP1/main.c.s
@@ -173,7 +173,7 @@ TP1/main.s: TP1/main.c.s
 
 # target to generate assembly for a file
 TP1/main.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\MonProjet.dir\build.make CMakeFiles/MonProjet.dir/TP1/main.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\TP1.dir\build.make CMakeFiles/TP1.dir/TP1/main.c.s
 .PHONY : TP1/main.c.s
 
 Tools/FileReading.obj: Tools/FileReading.c.obj
@@ -181,7 +181,7 @@ Tools/FileReading.obj: Tools/FileReading.c.obj
 
 # target to build an object file
 Tools/FileReading.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\MonProjet.dir\build.make CMakeFiles/MonProjet.dir/Tools/FileReading.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\TP1.dir\build.make CMakeFiles/TP1.dir/Tools/FileReading.c.obj
 .PHONY : Tools/FileReading.c.obj
 
 Tools/FileReading.i: Tools/FileReading.c.i
@@ -189,7 +189,7 @@ Tools/FileReading.i: Tools/FileReading.c.i
 
 # target to preprocess a source file
 Tools/FileReading.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\MonProjet.dir\build.make CMakeFiles/MonProjet.dir/Tools/FileReading.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\TP1.dir\build.make CMakeFiles/TP1.dir/Tools/FileReading.c.i
 .PHONY : Tools/FileReading.c.i
 
 Tools/FileReading.s: Tools/FileReading.c.s
@@ -197,7 +197,7 @@ Tools/FileReading.s: Tools/FileReading.c.s
 
 # target to generate assembly for a file
 Tools/FileReading.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\MonProjet.dir\build.make CMakeFiles/MonProjet.dir/Tools/FileReading.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\TP1.dir\build.make CMakeFiles/TP1.dir/Tools/FileReading.c.s
 .PHONY : Tools/FileReading.c.s
 
 Tools/Tools.obj: Tools/Tools.c.obj
@@ -205,7 +205,7 @@ Tools/Tools.obj: Tools/Tools.c.obj
 
 # target to build an object file
 Tools/Tools.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\MonProjet.dir\build.make CMakeFiles/MonProjet.dir/Tools/Tools.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\TP1.dir\build.make CMakeFiles/TP1.dir/Tools/Tools.c.obj
 .PHONY : Tools/Tools.c.obj
 
 Tools/Tools.i: Tools/Tools.c.i
@@ -213,7 +213,7 @@ Tools/Tools.i: Tools/Tools.c.i
 
 # target to preprocess a source file
 Tools/Tools.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\MonProjet.dir\build.make CMakeFiles/MonProjet.dir/Tools/Tools.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\TP1.dir\build.make CMakeFiles/TP1.dir/Tools/Tools.c.i
 .PHONY : Tools/Tools.c.i
 
 Tools/Tools.s: Tools/Tools.c.s
@@ -221,7 +221,7 @@ Tools/Tools.s: Tools/Tools.c.s
 
 # target to generate assembly for a file
 Tools/Tools.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\MonProjet.dir\build.make CMakeFiles/MonProjet.dir/Tools/Tools.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\TP1.dir\build.make CMakeFiles/TP1.dir/Tools/Tools.c.s
 .PHONY : Tools/Tools.c.s
 
 # Help Target
@@ -232,7 +232,7 @@ help:
 	@echo ... depend
 	@echo ... edit_cache
 	@echo ... rebuild_cache
-	@echo ... MonProjet
+	@echo ... TP1
 	@echo ... TP1/Sorting.obj
 	@echo ... TP1/Sorting.i
 	@echo ... TP1/Sorting.s

@@ -719,7 +719,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "MonProjet"
+			"value" : "TP1"
 		},
 		{
 			"name" : "CMAKE_RANLIB",
@@ -1139,6 +1139,42 @@
 		},
 		{
 			"name" : "MonProjet_SOURCE_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "D:/Github/Algo-et-structure"
+		},
+		{
+			"name" : "TP1_BINARY_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "D:/Github/Algo-et-structure/cmake-build-debug"
+		},
+		{
+			"name" : "TP1_IS_TOP_LEVEL",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "ON"
+		},
+		{
+			"name" : "TP1_SOURCE_DIR",
 			"properties" : 
 			[
 				{

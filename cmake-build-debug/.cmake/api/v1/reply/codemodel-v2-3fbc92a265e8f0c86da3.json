@@ -27,7 +27,7 @@
 					[
 						0
 					],
-					"name" : "MonProjet",
+					"name" : "TP1",
 					"targetIndexes" : 
 					[
 						0
@@ -38,9 +38,9 @@
 			[
 				{
 					"directoryIndex" : 0,
-					"id" : "MonProjet::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-MonProjet-Debug-8889d0cc97edc5c80152.json",
-					"name" : "MonProjet",
+					"id" : "TP1::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-TP1-Debug-d1403ccbadb55c03a224.json",
+					"name" : "TP1",
 					"projectIndex" : 0
 				}
 			]

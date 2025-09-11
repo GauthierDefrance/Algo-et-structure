@@ -10,18 +10,26 @@ int main(){
     int N = 12;
     int MIN = 100;
     int MAX = 200;
-    Telement *tab = initTab(N);
+    TElement *tab = initTab(N);
     nullTab(tab,N);
     randomiseTab(tab, N, MIN, MAX);
-    selectSort(tab,N);
     printTab(tab, N);
 
     int n=0;
-    Telement * newTab = tabFichier("../Tools/test.txt", &n);
+    TElement * newTab = tabFichier("../Tools/test.txt", &n);
     printf("test %d \n", n);
     printTab(newTab, n);
-    selectSort(newTab, n);
-    printTab(newTab, n);
+
+    //selectSort(newTab, n);
+    //printTab(newTab, n);
+
+    printTab(tab, n);
+    printf("Test :\n");
+    //insertSort(tab, n);
+    fusionSort(tab,n,0,n);
+    printTab(tab, n);
+
+
 
 }
 

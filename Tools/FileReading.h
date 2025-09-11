@@ -26,7 +26,7 @@ void printLines(char *FilePath);
  * @param n L'addresse de la variable ou stocker la taille
  * @return
  */
-Telement* tabFichier(char *FilePath, int * n);
+TElement* tabFichier(char *FilePath, int * n);
 
 
 /**

@@ -10,7 +10,7 @@
  * @param tab le tableau de Telement
  * @param n la taille du tableau
  */
-void printTab(Telement tab[], int n);
+void printTab(TElement tab[], int n);
 
 /**
  * Fonction qui initialise et renvoi un tableau de Telement de taille n.
@@ -18,7 +18,7 @@ void printTab(Telement tab[], int n);
  * @param n la taille du tableau
  * @return un tableau de Telement
  */
-Telement* initTab(int n);
+TElement* initTab(int n);
 
 
 /**
@@ -27,13 +27,13 @@ Telement* initTab(int n);
  * @param tab le tableau
  * @param n la taille du tableau
  */
-void nullTab(Telement tab[], int n);
+void nullTab(TElement tab[], int n);
 
 /**
  * Procéduire qui détruit et libère la mémoire prise par un tableau créé.
  * @param tab 
  */
-void destroyTab(Telement **tab);
+void destroyTab(TElement **tab);
 
 
 /**
@@ -44,6 +44,6 @@ void destroyTab(Telement **tab);
  * @param Min la taille minimal des nombres aléatoire
  * @param Max la taille maximal des nombres aléatoire
  */
-void randomiseTab(Telement tab[], int n, int Min, int Max);
+void randomiseTab(TElement tab[], int n, int Min, int Max);
 
 #endif //TOOLS_H

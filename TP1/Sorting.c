@@ -3,25 +3,19 @@
 //
 
 #include "Sorting.h"
+#include "../Tools/Tools.h"
 #include <stdio.h>
+#include <stdlib.h>
 
-typedef int Telement;
 
-
-/**
-*  Fonction qui permute deux Telement dans un  tab de Telement aux indices a et b.
-**/
-void permutation(Telement tab[], int n, int a, int b){
-  Telement tmp = tab[a];
+void permutation(TElement tab[], int n, int a, int b){
+  TElement tmp = tab[a];
   tab[a] = tab[b];
   tab[b] = tmp;
 }
 
-/**
-*  Fonction qui trouve l'élément minimum d'un tableau Telement, compris entre i et n.
-**/
-Telement findMinIndex(Telement tab[], int n, int i){
-  Telement champion=tab[i];
+TElement findMinIndex(TElement tab[], int n, int i){
+  TElement champion=tab[i];
   int champion_index=i;
     for(int j=i; j<n; j++){
       if(champion>tab[j]) {
@@ -32,8 +26,7 @@ Telement findMinIndex(Telement tab[], int n, int i){
   return champion_index;
 }
 
-
-void selectSort(Telement tab[], int n) {
+void selectSort(TElement tab[], int n) {
   int i;
   for (int k = 0; k < n-1; k++) {
     i = findMinIndex(tab, n, k);
@@ -41,6 +34,42 @@ void selectSort(Telement tab[], int n) {
   }
 }
 
+void insertSort(int tab[], int n) {
+  int currentValue, j;
+  for (int i = 1; i < n; i++) {
+    currentValue = tab[i];
+    j = i - 1;
+    while (j >= 0 && tab[j] > currentValue) {
+      tab[j + 1] = tab[j];
+      j = j - 1;
+    }
+    tab[j + 1] = currentValue;
+  }
+}
 
 
 
+
+void fusion(int tab[], int n, int debut, int milieu, int fin) {
+  int i, j, k;
+  i = debut;
+  j = milieu+1;
+  k = fin;
+
+  TElement tabG[];
+  TElement tabD[];
+
+
+
+}
+
+
+
+void fusionSort(int tab[], int n, int debut, int fin) {
+  if (debut < fin) {
+    int milieu = (debut + fin) / 2;
+    fusionSort(tab, n, debut, milieu);
+    fusionSort(tab, n, milieu + 1, fin);
+    fusion(tab, n, debut, milieu, fin);
+  }
+}

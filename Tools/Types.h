@@ -5,6 +5,6 @@
 #ifndef TYPE_H
 #define TYPE_H
 
-typedef int Telement;
+typedef int TElement;
 
 #endif //TYPE_H

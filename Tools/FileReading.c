@@ -31,7 +31,7 @@ void printLines(char *FilePath){
     }
 }
 
-Telement* tabFichier(char *FilePath, int * n){
+TElement* tabFichier(char *FilePath, int * n){
     FILE* file = fopen(FilePath, "r");
     char line[100]; //on se limite à 100 caractère, on peut faire bcp moins
     if (file != NULL) {
@@ -42,7 +42,7 @@ Telement* tabFichier(char *FilePath, int * n){
         char* ligne2=fgets(line, sizeof(line), file);
         char *token = strtok(ligne2, ",");
 
-        Telement* tab=initTab(*n);
+        TElement* tab=initTab(*n);
         int i=0;
         while (token != NULL) {
             tab[i]=strtol(token,&endptr,10);
@@ -55,6 +55,7 @@ Telement* tabFichier(char *FilePath, int * n){
     }
     else {
         printf("Impossible d'ouvrir le fichier!\n");
+        return NULL;
     }
 }
 

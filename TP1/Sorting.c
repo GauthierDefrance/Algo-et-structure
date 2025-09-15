@@ -50,26 +50,57 @@ void insertSort(int tab[], int n) {
 
 
 
-void fusion(int tab[], int n, int debut, int milieu, int fin) {
-  int i, j, k;
-  i = debut;
-  j = milieu+1;
-  k = fin;
+void fusion(TElement tab[], int debut, int milieu, int fin) {
+  int n1 = milieu - debut + 1;
+  int n2 = fin - milieu;
 
-  TElement tabG[];
-  TElement tabD[];
+  // Tableaux temporaires
+  int *tabG = malloc(n1 * sizeof(int));
+  int *tabD = malloc(n2 * sizeof(int));
 
+  // Copier les données
+  for (int i = 0; i < n1; i++)
+    tabG[i] = tab[debut + i];
+  for (int j = 0; j < n2; j++)
+    tabD[j] = tab[milieu + 1 + j];
 
+  int i = 0, j = 0, k = debut;
 
+  // Fusionner les deux sous-tableaux
+  while (i < n1 && j < n2) {
+    if (tabG[i] <= tabD[j]) {
+      tab[k] = tabG[i];
+      i++;
+    } else {
+      tab[k] = tabD[j];
+      j++;
+    }
+    k++;
+  }
+
+  // Copier les éléments restants
+  while (i < n1) {
+    tab[k] = tabG[i];
+    i++;
+    k++;
+  }
+
+  while (j < n2) {
+    tab[k] = tabD[j];
+    j++;
+    k++;
+  }
+
+  // Libérer la mémoire
+  free(tabG);
+  free(tabD);
 }
 
-
-
-void fusionSort(int tab[], int n, int debut, int fin) {
+void fusionSort(TElement tab[],int n, int debut, int fin) {
   if (debut < fin) {
     int milieu = (debut + fin) / 2;
-    fusionSort(tab, n, debut, milieu);
-    fusionSort(tab, n, milieu + 1, fin);
-    fusion(tab, n, debut, milieu, fin);
+    fusion(tab,n, debut, milieu);
+    fusion(tab,n, milieu + 1, fin);
+    fusion(tab, debut, milieu, fin);
   }
 }

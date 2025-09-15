@@ -1,13 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <CustomBuild Include="D:\github\Algo-et-structure\build\CMakeFiles\92b1c6cc30152a8f58efec470f4981e9\generate.stamp.rule">
+    <CustomBuild Include="D:\Github\Algo-et-structure\build\CMakeFiles\beaa3011fd1d186a7cc610d95f0cd0d4\generate.stamp.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="CMake Rules">
-      <UniqueIdentifier>{A99780B8-55E2-3819-8A67-4236BD313991}</UniqueIdentifier>
+      <UniqueIdentifier>{841B5FD2-0FAA-3C28-9EEF-E7C60EE2D69D}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>

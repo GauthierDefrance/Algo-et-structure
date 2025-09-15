@@ -15,22 +15,19 @@ int main(){
     randomiseTab(tab, N, MIN, MAX);
     printTab(tab, N);
 
-    int n=0;
-    TElement * newTab = tabFichier("../Tools/test.txt", &n);
-    printf("test %d \n", n);
-    printTab(newTab, n);
+    //int n=0;
+    //TElement * newTab = tabFichier("../Tools/test.txt", &n);
+    //printf("test %d \n", n);
+    //printTab(newTab, n);
 
     //selectSort(newTab, n);
     //printTab(newTab, n);
 
-    printTab(tab, n);
+    int n=12;
     printf("Test :\n");
     //insertSort(tab, n);
     fusionSort(tab,n,0,n);
     printTab(tab, n);
-
-
-
 }
 
 

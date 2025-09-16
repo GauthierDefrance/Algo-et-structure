@@ -85,11 +85,19 @@ void fusion(TElement tab[], TElement tmp[], int debut, int milieu, int fin) {
 }
 
 
-void fusionSort(TElement tab[], TElement tmp[], int debut, int fin) {
+void fusionRec(TElement tab[], TElement tmp[], int debut, int fin) {
   if (debut<fin) {
     int milieu=(debut+fin)/2;
-    fusionSort(tab,tmp,debut,milieu);
-    fusionSort(tab,tmp,milieu+1,fin);
+    fusionRec(tab,tmp,debut,milieu);
+    fusionRec(tab,tmp,milieu+1,fin);
     fusion(tab,tmp,debut,milieu,fin);
   }
+}
+
+
+void fusionSort(TElement tab[], int n) {
+  TElement *tmpTab = initTab(n+2);
+  nullTab(tmpTab,n);
+  fusionRec(tab,tmpTab,0, n-1);
+  destroyTab(&tmpTab);
 }

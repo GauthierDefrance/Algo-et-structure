@@ -7,7 +7,7 @@
 #include "../Tools/Tools.h"
 
 int main(){
-    int N = 1000;
+    int N = 6;
     int MIN = 100;
     int MAX = 200;
     TElement *tab = initTab(N);
@@ -26,9 +26,7 @@ int main(){
     printf("Test :\n");
     //insertSort(tab, n);
 
-    TElement *tmpTab = initTab(N+2);
-    nullTab(tmpTab,N);
-    fusionSort(tab, tmpTab,0,N-1);
+    fusionSort(tab, N);
     printTab(tab, N);
 }
 

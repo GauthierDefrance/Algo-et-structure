@@ -49,10 +49,10 @@ void insertSort(TElement tab[], int n);
 /**
  * Fonction qui trie un tableau de Telement par fusion
  * @param tab
- * @param n 
- * @param debut 
+ * @param tmp
+ * @param debut
  * @param fin 
  */
-void fusionSort(TElement tab[], int n, int debut, int fin);
+void fusionSort(TElement tab[], TElement tmp[], int debut, int fin);
 
 #endif // SORTING_H

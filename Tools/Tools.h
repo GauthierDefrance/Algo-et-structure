@@ -46,4 +46,5 @@ void destroyTab(TElement **tab);
  */
 void randomiseTab(TElement tab[], int n, int Min, int Max);
 
+
 #endif //TOOLS_H

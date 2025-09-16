@@ -47,11 +47,49 @@ void insertSort(int tab[], int n) {
   }
 }
 
-void fusion(TElement tab[], int debut, int milieu, int fin) {
+void fusion(TElement tab[], TElement tmp[], int debut, int milieu, int fin) {
+
+  int n1 = milieu - debut + 1;
+  int n2 = fin - milieu;
+
+  TElement *tab1 = tmp;
+  TElement *tab2 = tmp + n1 + 1;
+
+  int v=0;
+  for (int o = debut; o <= milieu; o++) {
+    tab1[v]=tab[o];
+    v++;
+  }
+
+  v=0;
+  for (int o = milieu+1; o <= fin; o++) {
+    tab2[v]=tab[o];
+    v++;
+  }
+
+  tab1[milieu-debut+1] = INT_MAX;
+  tab2[fin-milieu] = INT_MAX;
+
+  int i = 0, j = 0;
+  for (int k = debut; k <= fin; k++) {
+    if (tab1[i] < tab2[j]) {
+      tab[k] = tab1[i];
+      i++;
+    }
+    else {
+      tab[k] = tab2[j];
+      j++;
+    }
+  }
 
 }
 
 
-void fusionSort(TElement tab[],int n, int debut, int fin) {
-
+void fusionSort(TElement tab[], TElement tmp[], int debut, int fin) {
+  if (debut<fin) {
+    int milieu=(debut+fin)/2;
+    fusionSort(tab,tmp,debut,milieu);
+    fusionSort(tab,tmp,milieu+1,fin);
+    fusion(tab,tmp,debut,milieu,fin);
+  }
 }

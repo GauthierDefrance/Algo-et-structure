@@ -34,7 +34,7 @@ void selectSort(TElement tab[], int n) {
   }
 }
 
-void insertSort(int tab[], int n) {
+void insertSort(TElement tab[], int n) {
   int currentValue, j;
   for (int i = 1; i < n; i++) {
     currentValue = tab[i];
@@ -100,4 +100,10 @@ void fusionSort(TElement tab[], int n) {
   nullTab(tmpTab,n);
   fusionRec(tab,tmpTab,0, n-1);
   destroyTab(&tmpTab);
+}
+
+
+
+void fastSort(TElement tab[], int n) {
+
 }

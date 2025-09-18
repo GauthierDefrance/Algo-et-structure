@@ -7,7 +7,7 @@
 
     int main() {
         // Ouvrir un pipe vers Gnuplot
-        FILE *gnuplot = popen("\"C:\\Program Files\\gnuplot\\bin\\gnuplot.exe\" -persistent", "w");
+        FILE *gnuplot = popen("\"\"C:\\Program Files\\gnuplot\\bin\\gnuplot.exe\" -persistent\"", "w");
         if (gnuplot == NULL) {
             fprintf(stderr, "Erreur : impossible de lancer gnuplot.\n");
             return 1;

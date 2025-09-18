@@ -11,6 +11,8 @@
 int const MIN= -200;
 int const MAX=  200;
 
+// WARNING :
+// pow(X, NMax_echantillons) must not exceed 16384, else the program will crash due to recursions limits.
 int const X=2; //The number pow NMax_echantillons = the size of the last tab that will be randomly generated.
 int const NMax_echantillons=14;
 int const MAX_DATA=100;

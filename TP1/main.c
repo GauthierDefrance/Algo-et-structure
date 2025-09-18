@@ -12,8 +12,9 @@
 int const MIN= -200;
 int const MAX=  200;
 
-int const X=10; //The number pow NMax_echantillons = the size of the last tab that will be randomly generated.
-int const NMax_echantillons=6;
+int const X=2; //The number pow NMax_echantillons = the size of the last tab that will be randomly generated.
+int const NMax_echantillons=16;
+int const MAX_DATA=100;
 
 double testSortsAlgo(void (*fonction)(TElement*, int), int n) {
     TElement *tab = initTab(n); //Génération du tableau de taille n
@@ -33,9 +34,9 @@ int initData() {
     int size;
     double iSort, sSort, mSort;
     FILE *csv = fopen("dataSort.csv", "w");
-    fprintf(csv, "Size_of_tab;insertSort;selectSort;fusionSort\n");
+    fprintf(csv, "#Size_of_tab;insertSort;selectSort;fusionSort\n");
     for (int k=1; k<=NMax_echantillons; k++) {
-        size = (int) pow(10, k);
+        size = (int) pow(X, k);
         printf("Begining calculations for tab of %d elements\n", size);
         iSort=testSortsAlgo(insertSort,(int) pow(X,k));
         sSort=testSortsAlgo(selectSort,(int) pow(X,k));
@@ -49,8 +50,37 @@ int initData() {
 }
 
 
+int graphShow() {
+    FILE *gnuplot = popen("\"C:\\Program Files\\gnuplot\\bin\\gnuplot.exe\" -persistent", "w");
+    if (gnuplot == NULL) {
+        fprintf(stderr, "Erreur : impossible de lancer Gnuplot.\n");
+        return 1;
+    }
+
+    // Envoyer des commandes à Gnuplot
+    fprintf(gnuplot, "set datafile separator \";\"\n");
+    fprintf(gnuplot, "set title 'Comparaison O(n) d algorithmes de tri'\n");
+    fprintf(gnuplot, "set xlabel 'Taille du tableau'\n");
+    fprintf(gnuplot, "set ylabel 'Temps (s)'\n");
+    fprintf(gnuplot, "set grid\n");
+    // Optional: set logscale if you have exponential sizes
+    //fprintf(gnuplot, "set logscale x\n");
+    //fprintf(gnuplot, "set logscale y\n");
+    fprintf(gnuplot, "plot 'dataSort.csv' using 1:2 with linespoints title 'insertSort', "
+    "'dataSort.csv' using 1:3 with linespoints title 'selectSort', "
+    "'dataSort.csv' using 1:4 with linespoints title 'fusionSort'\n"
+        );
+
+    fflush(gnuplot);  // S'assurer que tout est envoyé
+
+    pclose(gnuplot);  // Fermer proprement
+    return 0;
+}
+
+
 int main(){
     initData();
+    graphShow();
     return 0;
 }
 

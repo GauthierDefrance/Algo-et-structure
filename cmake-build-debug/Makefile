@@ -128,114 +128,53 @@ TP1/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\TP1.dir\build.make CMakeFiles/TP1.dir/build
 .PHONY : TP1/fast
 
-#=============================================================================
-# Target rules for targets named TP2
-
-# Build rule for target.
-TP2: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 TP2
-.PHONY : TP2
-
-# fast build rule for target.
-TP2/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\TP2.dir\build.make CMakeFiles/TP2.dir/build
-.PHONY : TP2/fast
-
-TP1/Sorting.obj: TP1/Sorting.c.obj
-.PHONY : TP1/Sorting.obj
+TP1_and_2/Sorting.obj: TP1_and_2/Sorting.c.obj
+.PHONY : TP1_and_2/Sorting.obj
 
 # target to build an object file
-TP1/Sorting.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\TP1.dir\build.make CMakeFiles/TP1.dir/TP1/Sorting.c.obj
-.PHONY : TP1/Sorting.c.obj
+TP1_and_2/Sorting.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\TP1.dir\build.make CMakeFiles/TP1.dir/TP1_and_2/Sorting.c.obj
+.PHONY : TP1_and_2/Sorting.c.obj
 
-TP1/Sorting.i: TP1/Sorting.c.i
-.PHONY : TP1/Sorting.i
+TP1_and_2/Sorting.i: TP1_and_2/Sorting.c.i
+.PHONY : TP1_and_2/Sorting.i
 
 # target to preprocess a source file
-TP1/Sorting.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\TP1.dir\build.make CMakeFiles/TP1.dir/TP1/Sorting.c.i
-.PHONY : TP1/Sorting.c.i
+TP1_and_2/Sorting.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\TP1.dir\build.make CMakeFiles/TP1.dir/TP1_and_2/Sorting.c.i
+.PHONY : TP1_and_2/Sorting.c.i
 
-TP1/Sorting.s: TP1/Sorting.c.s
-.PHONY : TP1/Sorting.s
+TP1_and_2/Sorting.s: TP1_and_2/Sorting.c.s
+.PHONY : TP1_and_2/Sorting.s
 
 # target to generate assembly for a file
-TP1/Sorting.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\TP1.dir\build.make CMakeFiles/TP1.dir/TP1/Sorting.c.s
-.PHONY : TP1/Sorting.c.s
+TP1_and_2/Sorting.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\TP1.dir\build.make CMakeFiles/TP1.dir/TP1_and_2/Sorting.c.s
+.PHONY : TP1_and_2/Sorting.c.s
 
-TP1/main.obj: TP1/main.c.obj
-.PHONY : TP1/main.obj
+TP1_and_2/main.obj: TP1_and_2/main.c.obj
+.PHONY : TP1_and_2/main.obj
 
 # target to build an object file
-TP1/main.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\TP1.dir\build.make CMakeFiles/TP1.dir/TP1/main.c.obj
-.PHONY : TP1/main.c.obj
+TP1_and_2/main.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\TP1.dir\build.make CMakeFiles/TP1.dir/TP1_and_2/main.c.obj
+.PHONY : TP1_and_2/main.c.obj
 
-TP1/main.i: TP1/main.c.i
-.PHONY : TP1/main.i
-
-# target to preprocess a source file
-TP1/main.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\TP1.dir\build.make CMakeFiles/TP1.dir/TP1/main.c.i
-.PHONY : TP1/main.c.i
-
-TP1/main.s: TP1/main.c.s
-.PHONY : TP1/main.s
-
-# target to generate assembly for a file
-TP1/main.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\TP1.dir\build.make CMakeFiles/TP1.dir/TP1/main.c.s
-.PHONY : TP1/main.c.s
-
-TP2/Sorting.obj: TP2/Sorting.c.obj
-.PHONY : TP2/Sorting.obj
-
-# target to build an object file
-TP2/Sorting.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\TP2.dir\build.make CMakeFiles/TP2.dir/TP2/Sorting.c.obj
-.PHONY : TP2/Sorting.c.obj
-
-TP2/Sorting.i: TP2/Sorting.c.i
-.PHONY : TP2/Sorting.i
+TP1_and_2/main.i: TP1_and_2/main.c.i
+.PHONY : TP1_and_2/main.i
 
 # target to preprocess a source file
-TP2/Sorting.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\TP2.dir\build.make CMakeFiles/TP2.dir/TP2/Sorting.c.i
-.PHONY : TP2/Sorting.c.i
+TP1_and_2/main.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\TP1.dir\build.make CMakeFiles/TP1.dir/TP1_and_2/main.c.i
+.PHONY : TP1_and_2/main.c.i
 
-TP2/Sorting.s: TP2/Sorting.c.s
-.PHONY : TP2/Sorting.s
-
-# target to generate assembly for a file
-TP2/Sorting.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\TP2.dir\build.make CMakeFiles/TP2.dir/TP2/Sorting.c.s
-.PHONY : TP2/Sorting.c.s
-
-TP2/main.obj: TP2/main.c.obj
-.PHONY : TP2/main.obj
-
-# target to build an object file
-TP2/main.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\TP2.dir\build.make CMakeFiles/TP2.dir/TP2/main.c.obj
-.PHONY : TP2/main.c.obj
-
-TP2/main.i: TP2/main.c.i
-.PHONY : TP2/main.i
-
-# target to preprocess a source file
-TP2/main.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\TP2.dir\build.make CMakeFiles/TP2.dir/TP2/main.c.i
-.PHONY : TP2/main.c.i
-
-TP2/main.s: TP2/main.c.s
-.PHONY : TP2/main.s
+TP1_and_2/main.s: TP1_and_2/main.c.s
+.PHONY : TP1_and_2/main.s
 
 # target to generate assembly for a file
-TP2/main.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\TP2.dir\build.make CMakeFiles/TP2.dir/TP2/main.c.s
-.PHONY : TP2/main.c.s
+TP1_and_2/main.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\TP1.dir\build.make CMakeFiles/TP1.dir/TP1_and_2/main.c.s
+.PHONY : TP1_and_2/main.c.s
 
 Tools/FileReading.obj: Tools/FileReading.c.obj
 .PHONY : Tools/FileReading.obj
@@ -267,7 +206,6 @@ Tools/Tools.obj: Tools/Tools.c.obj
 # target to build an object file
 Tools/Tools.c.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\TP1.dir\build.make CMakeFiles/TP1.dir/Tools/Tools.c.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\TP2.dir\build.make CMakeFiles/TP2.dir/Tools/Tools.c.obj
 .PHONY : Tools/Tools.c.obj
 
 Tools/Tools.i: Tools/Tools.c.i
@@ -276,7 +214,6 @@ Tools/Tools.i: Tools/Tools.c.i
 # target to preprocess a source file
 Tools/Tools.c.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\TP1.dir\build.make CMakeFiles/TP1.dir/Tools/Tools.c.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\TP2.dir\build.make CMakeFiles/TP2.dir/Tools/Tools.c.i
 .PHONY : Tools/Tools.c.i
 
 Tools/Tools.s: Tools/Tools.c.s
@@ -285,7 +222,6 @@ Tools/Tools.s: Tools/Tools.c.s
 # target to generate assembly for a file
 Tools/Tools.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\TP1.dir\build.make CMakeFiles/TP1.dir/Tools/Tools.c.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\TP2.dir\build.make CMakeFiles/TP2.dir/Tools/Tools.c.s
 .PHONY : Tools/Tools.c.s
 
 # Help Target
@@ -297,19 +233,12 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... TP1
-	@echo ... TP2
-	@echo ... TP1/Sorting.obj
-	@echo ... TP1/Sorting.i
-	@echo ... TP1/Sorting.s
-	@echo ... TP1/main.obj
-	@echo ... TP1/main.i
-	@echo ... TP1/main.s
-	@echo ... TP2/Sorting.obj
-	@echo ... TP2/Sorting.i
-	@echo ... TP2/Sorting.s
-	@echo ... TP2/main.obj
-	@echo ... TP2/main.i
-	@echo ... TP2/main.s
+	@echo ... TP1_and_2/Sorting.obj
+	@echo ... TP1_and_2/Sorting.i
+	@echo ... TP1_and_2/Sorting.s
+	@echo ... TP1_and_2/main.obj
+	@echo ... TP1_and_2/main.i
+	@echo ... TP1_and_2/main.s
 	@echo ... Tools/FileReading.obj
 	@echo ... Tools/FileReading.i
 	@echo ... Tools/FileReading.s

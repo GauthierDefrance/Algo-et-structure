@@ -8,8 +8,8 @@
 #include "../Tools/Tools.h"
 #include "Sorting.h"
 
-int const MIN= -200;
-int const MAX=  200;
+int const MIN= -1200;
+int const MAX=  1200;
 
 // WARNING :
 // pow(X, NMax_echantillons) must not exceed 16384, else the program will crash due to recursions limits.
